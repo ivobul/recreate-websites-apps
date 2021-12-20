@@ -1,0 +1,272 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General styles */
+body {
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 60px;
+  padding: 0 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  padding: .3rem 0;
+  flex: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: block;
+  font-size: 0.8125rem;
+}
+
+nav ul li {
+  margin-right: 12px;
+}
+
+nav ul li.right-side {
+  margin-left: auto;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav i.material-icons {
+  opacity: .6;
+  vertical-align: middle;
+}
+
+nav i.material-icons:hover {
+  opacity: 1;
+}
+
+nav .login-btn {
+  background-color: #4484f2;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: bold;
+  padding: .3rem .8rem;
+}
+
+/* Main section */
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    justify-content: center;
+  }
+}
+
+img {
+  height: 100px;
+  width: 285px;
+}
+
+form {
+  margin-top: 25px;
+}
+
+form div {
+  position: relative; 
+}
+
+form label {
+  color: #9AA0A6;
+  left: 15px;
+  position: absolute;
+  top: 14px;
+  z-index: 2;
+}
+
+form input {
+  border: 1px solid #dfe1e5;
+  border-radius: 30px;
+  display: block;
+  outline: none;
+  padding: .8rem 1rem .8rem 3rem;
+  width: 500px;
+}
+
+@media screen and (max-width: 520px) {
+  form input {
+    width: 90vw;
+  }
+}
+
+form input:hover, 
+form input:focus {
+  box-shadow: 0 0 8px #d9d9d9;
+  transform: scaleY(1.1);
+}
+
+form .form-btns { 
+  margin: 2rem 0;
+  text-align: center;
+}
+
+form .form-btns button {
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
+@media screen and (max-width: 320px) {
+  form .form-btns button {
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  form .form-btns button:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+form .form-btns button:hover {
+  border: 1px solid #c1c1c1;
+}
+
+form .form-btns button:first-child {
+  margin-right: .5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  color: #6f7277;
+}
+
+.region, 
+.footer-nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+}
+
+.region {
+  border-bottom: 1px solid #dadce0;
+}
+
+footer .footer-nav p {
+  margin-right: 20px;
+}
+
+footer .footer-nav p.right-footer {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-nav p {
+    line-height: 1.7;
+  }
+  
+  footer .footer-nav p.right-footer {
+    margin-left: initial;
+  }
+}
+
+footer .footer-nav p:last-child {
+  margin-right: 0;
+}
