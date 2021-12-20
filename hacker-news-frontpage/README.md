@@ -1,6 +1,6 @@
-## The Hacker News' Frontpage (news.ycombinator.com)
+## Recreate the Hacker News' Frontpage (news.ycombinator.com)
 
-![CSS Exercise - Preview](design/preview.png)
+![Preview](design/preview.png)
 
 ---
 
