@@ -1,3 +1,3 @@
-# Recreate the Google.com homepage
+## Recreate the Google.com Homepage
 
 ![Preview](preview.png)
