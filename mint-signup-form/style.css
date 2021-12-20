@@ -1,0 +1,246 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General styles */
+body {
+  background-color: #eceef1;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.material-icons {
+  color: #fff; 
+  font-size: .9rem;
+  padding-right: 3px;
+  vertical-align: -10%;
+}
+
+input { 
+  padding: 9px 0;
+  width: 100%; 
+}
+
+button {
+  background-color: #0077C5;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+a {
+  color: #0077C5;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: .6rem 0;
+}
+
+nav p {
+  font-size: .8rem; 
+  margin-right: 12px;
+}
+
+nav .signin-btn {
+  border: 1px solid #4c4c4c;
+  font-size: .9rem;
+  width: 100px;
+}
+
+/* Main section */
+main h1 {
+  border-bottom: 2px solid #5a7fc9;
+  color: #8d9096;
+  font-size: 3rem;
+  margin: 20px auto 30px;
+  padding-bottom: 5px;
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Main section */
+/* Form */
+form {
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.form-wrapper {
+  padding: 2rem;
+}
+
+.form-header {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.form-header h2 { 
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.form-header p, 
+.form-header a { 
+  font-size: .9rem;
+}
+
+.form-inputs p {
+  padding-bottom: 30px;
+}
+
+.form-inputs label,
+.form-inputs input { 
+  display: block; 
+}
+
+.form-inputs label {
+  font-size: .9rem;
+  padding-bottom: 10px;
+}
+
+.form-inputs input {
+  padding-left: 5px;
+}
+
+.form-btn .signup-btn {
+  border: 1px solid transparent;
+  padding: 12.5px 0;
+  width: 100%;
+}
+
+.form-btn .material-icons {
+  font-size: 1rem;
+}
+
+.form-legal {
+  font-size: .8rem;
+  padding: 40px 10px 8px;
+  text-align: center;
+}
+
+.form-footer {
+  background-color: #eceef1;
+  width: 100%;
+  font-size: .7rem;
+  padding: 1.3rem .5rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  font-size: .8rem;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 70%; 
+}
+
+footer a {
+  color: inherit;
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  nav { 
+    display: none; 
+  }
+
+  footer div {
+    width: 100%; 
+  }
+}
+

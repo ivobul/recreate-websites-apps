@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Registration Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="login-text">
+          <p>Already have an Mintuit account?</p>
+          <p><a href="#">I forgot my User ID or Password</a></p>
+        </div><!-- Login text -->
+        <button type="submit" name="signin" class="signin-btn">
+          <span class="material-icons">lock</span>
+          Sign In
+        </button>
+      </nav><!-- Navigation -->
+      <main>
+        <h1>mintuit</h1>
+        <form>
+          <div class="form-wrapper">
+            <div class="form-header">
+              <h2>Create an Mintuit account</h2>
+              <p>One account for everything Mintuit.</p>
+              <a href="#">Learn more</a>
+            </div><!-- Form header -->
+            <div class="form-inputs">
+              <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="emailForm" pattern="^\S+@\S+\.\S+$" title="example@mail.com" required>
+              </p>
+              <p>
+                <label for="tel">Phone:</label>
+                <input type="tel" id="tel" name="telForm" title="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              </p>
+              <p>
+                <label for="pwd">Password (8 characters minimum):</label>
+                <input type="password" id="pwd" name="pwdForm" minlength="8" pattern="^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,})$" title="A valid password is a set of characters, each consisting of a lower-case letter, an upper-case letter, a digit, and a non-alphanumeric character." required>
+              </p>
+            </div><!-- Form input fields -->
+            <div class="form-btn">
+              <button type="submit" name="signup" class="signup-btn">
+                <span class="material-icons">lock</span>
+                Create Account
+              </button>
+            </div><!-- Form button -->
+            <div class="form-legal">
+              <p><em>By clicking Create account, you agree to our
+  <a href="#">Terms</a> and have read and acknowledge our <a href="#">Privacy Statement</a></em>.</p>
+            </div><!-- Form legal text section -->
+          </div><!-- Form wrapper -->
+          <div class="form-footer">
+            Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+          </div><!-- Form footer section -->
+        </form><!-- Form -->
+      </main><!-- Main -->
+      <footer>
+        <div>
+          <a href="#">Legal</a>
+          <a href="#">Privacy</a>
+          <a href="#">Security</a>
+        </div>
+        <div>
+          <p>
+          &copy; 2020 Mintuit. All rights reserved. Terms and conditions, features, support, pricing, and service options subject to change without notice. 
+          </p>
+        </div>
+      </footer>
+    </div><!-- Container -->
+  </body>
+</html>
