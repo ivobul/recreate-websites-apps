@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  height: 50vh;
+  justify-content: center;
+}
+
+.box__item {
+  animation: bouncing .9s infinite alternate;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+/* Blue ball */
+.box__item--color-blue {
+  background: #537ebf;
+}
+
+.box__item--anim-delay-0 {
+  animation-delay: 0ms;
+}
+
+/* Red ball */
+.box__item--color-red {
+  background: #e94333;
+}
+
+.box__item--anim-delay-200 {
+  animation-delay: 200ms;
+}
+
+/* Yellow ball */
+.box__item--color-yellow {
+  background: #f9bb16;
+}
+
+.box__item--anim-delay-400 {
+  animation-delay: 400ms;
+}
+
+/* Green ball */
+.box__item--color-green {
+  background: #2aa951;
+}
+
+.box__item--anim-delay-600 {
+  animation-delay: 600ms;
+}
+
+@keyframes bouncing {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-30px);
+  }
+}
