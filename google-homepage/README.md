@@ -2,6 +2,4 @@
 
 ![Preview](preview.png)
 
----
-
-<strong>For personal use and learning purposes only.</strong>
+### For personal use and learning purposes only.
