@@ -7,7 +7,7 @@ document.addEventListener("scroll", showBtn);
 
 function showBtn() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    btn.style.display = "block";
+    btn.style.display = "flex";
   } else {
     btn.style.display = "none";
   } 
