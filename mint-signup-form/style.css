@@ -102,12 +102,20 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #0096f8;
+}
+
 button:active {
   transform: translateY(3px);
 }
 
 a {
   color: #0077C5;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Navigation */
@@ -228,10 +236,6 @@ footer a {
   display: inline-block;
   padding-right: 10px;
   padding-bottom: 5px;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
