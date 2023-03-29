@@ -113,6 +113,10 @@ nav a {
   font-size: 0.8125rem;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 nav ul li {
   margin-right: 12px;
 }
@@ -138,8 +142,15 @@ nav .login-btn {
   background-color: #4484f2;
   border: 1px solid transparent;
   color: #fff;
-  font-weight: bold;
-  padding: .3rem .8rem;
+  cursor: pointer;
+  font-weight: ;
+  outline: none;
+  padding: .5rem 1.1rem;
+  transition: background-color .3s;
+}
+
+nav .login-btn:hover {
+  background-color: #3669c1;
 }
 
 /* Main section */
@@ -148,22 +159,12 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 1.5rem;
-}
-
-@media screen and (max-width: 600px) {
-  main {
-    justify-content: center;
-  }
-}
-
-img {
-  height: 100px;
-  width: 285px;
+  justify-content: center;
+  padding: 2rem 1.5rem;
 }
 
 form {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 form div {
@@ -204,30 +205,32 @@ form .form-btns {
   text-align: center;
 }
 
-form .form-btns button {
+.form-btns button {
   background-color: #f2f2f2;
   border: 1px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
   display: inline-block;
   padding: .5rem 1rem;
+  transition: border .3s;
+}
+
+.form-btns button:hover {
+  border: 1px solid #c1c1c1;
 }
 
 @media screen and (max-width: 320px) {
-  form .form-btns button {
+  .form-btns button {
     border-radius: 30px;
     width: 100%;
   }
   
-  form .form-btns button:first-child {
+  .form-btns button:first-child {
     margin-bottom: 10px;
   }
 }
 
-form .form-btns button:hover {
-  border: 1px solid #c1c1c1;
-}
-
-form .form-btns button:first-child {
+.form-btns button:first-child {
   margin-right: .5rem;
 }
 
@@ -237,12 +240,16 @@ footer {
   color: #6f7277;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 .region, 
 .footer-nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 1.5rem;
+  padding: .9rem 1.5rem;
 }
 
 .region {
