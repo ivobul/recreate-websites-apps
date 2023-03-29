@@ -91,7 +91,7 @@ body {
 }
 
 input { 
-  padding: 9px 0;
+  padding: 9px 12px;
   width: 100%; 
 }
 
@@ -100,6 +100,7 @@ button {
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  transition: background-color .3s;
 }
 
 button:hover {
@@ -189,10 +190,6 @@ form {
 .form-inputs label {
   font-size: .9rem;
   padding-bottom: 10px;
-}
-
-.form-inputs input {
-  padding-left: 5px;
 }
 
 .form-btn .signup-btn {
