@@ -141,11 +141,12 @@ nav i.material-icons:hover {
 nav .login-btn {
   background-color: #4484f2;
   border: 1px solid transparent;
+  border-radius: 4px;
   color: #fff;
   cursor: pointer;
   font-weight: ;
   outline: none;
-  padding: .5rem 1.1rem;
+  padding: .4rem 1.3rem;
   transition: background-color .3s;
 }
 
